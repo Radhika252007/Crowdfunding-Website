@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaign Details</title>
+    <link
+      rel="shortcut icon"
+      href="/Frontend/assets/nature.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/Frontend/css/header.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Frontend/css/footer.css" />
+    <link rel="stylesheet" href="/Frontend/css/campaign_page.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="/Frontend/js/header.js" defer></script>
+  </head>
+  <body>
+       <header>
+      <div class="web-logo">
+        <img src="/Frontend/assets/logo-transparent-svg.svg" alt="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li class="nav-link"><a href="/Frontend/index.html">Home</a></li>
+          <li class="nav-link">
+            <a href="/Frontend/components/donate.html">Donation</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/How_it_works.html">How it Works</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/About.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="login-btn">
+        <button
+          onclick="window.location.href='/Frontend/components/UserLogin.html'"
+        >
+          Log In
+        </button>
+        <button>Sign In</button>
+      </div>
+        <div class="login-small">
+          <button class="dropbtn" id="login-btn"><i class="fas fa-bars"></i></button>
+          <div class="dropdown-content" id="content">
+            <a href="#">Login</a>
+            <a href="#">Sign In</a>
+          </div>
+        </div>
+    </header>
+    <main>
+      <h1 class="campaign-heading">
+        Classroom Support Program for Slum children in Lucknow
+      </h1>
+      <section class="main-container">
+        <section class="about-camp">
+          <section class="camp-image" id="main-image"></section>
+          <section class="all-images">
+            <img src="/Frontend/assets/Help_image2.jpg" alt=""  class="camp-images" />
+            <img
+              src="/Frontend/assets/photo-1574097656146-0b43b7660cb6.avif"
+              alt=""
+              class="camp-images"
+            />
+            <img
+              src="/Frontend/assets/photo-1584376003963-e1aa9a61c0ac.avif"
+              alt=""
+              class="camp-images"
+            />
+            <img
+              src="/Frontend/assets/photo-1524069290683-0457abfe42c3.avif"
+              alt=""
+              class="camp-images"
+            />
+            <img
+              src="/Frontend/assets/photo-1488521787991-ed7bbaae773c.avif"
+              alt=""
+              class="camp-images"
+            />
+          </section>
+          <div class="campaign-headers">
+            <div
+              class="camp-section"
+              id="about-btn"
+              onclick="toggleSections('about')"
+            >
+              About
+            </div>
+            <div
+              class="camp-section"
+              id="update-btn"
+              onclick="toggleSections('update')"
+            >
+              Updates
+            </div>
+          </div>
+          <section class="about" id="about">
+            <h2>About the Fundraiser</h2>
+            <article>
+              <p>
+                In the bustling city of Lucknow, thousands of children living in
+                slum areas dream of going to school, but poverty, lack of
+                resources, and social challenges keep them away from classrooms.
+                For many of them, education is a distant hope rather than a
+                daily reality.
+              </p>
+              <p>
+                Our initiative is working to change that. By creating community
+                classrooms inside the heart of these neighborhoods, we provide
+                children with a safe, supportive space to learn. With volunteer
+                teachers, donated books, basic stationery, and digital learning
+                aids, these classrooms become more than just places of study –
+                they become a doorway to opportunity.
+              </p>
+              <p>
+                Why This Matters <br />
+
+                Breaking the cycle of poverty: Education gives children the
+                chance to pursue better jobs and futures. <br />
+
+                Safe spaces to learn: Instead of wandering streets, children
+                gain structured time in a caring environment. <br />
+
+                Confidence and self-worth: Learning helps children believe in
+                their potential and value their voices. <br />
+              </p>
+              <p>
+                How Your Support Helps <br />
+
+                Every contribution you make brings us closer to building
+                stronger classrooms: <br />
+
+                ₹300 provides notebooks and pencils for 10 children. <br />
+
+                ₹1,000 sponsors a month of teaching supplies. <br />
+
+                ₹5,000 sets up an entire community classroom with mats,
+                blackboard, and books. <br />
+
+                Together, we can turn these small efforts into a movement of
+                hope and education. Every child deserves the chance to read,
+                write, and dream – no matter where they are born. <br />
+
+                Your support today can transform a child’s tomorrow.
+              </p>
+            </article>
+            <button href="" class="update-btn" onclick="toggleSections('update')">Read Latest Updates</button>
+            <div class="share-btns">
+              <button class="s-btn facebook-btn">Facebook</button>
+              <button class="s-btn whatsapp-btn">Whatsapp</button>
+              <button class="s-btn contribute-btn">Contribute Now</button>
+            </div>
+          </section>
+          <section class="updates" id="update">
+            <h2>Last Updated: August 18, 2025</h2>
+            <div class="post-info">
+              <div class="post-img">
+                <img
+                  src="/Frontend/assets/single-man-icon-people-icon-user-profile-symbol-person-symbol-businessman-stock-vector.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="post-id">Anjali Verma</div>
+            </div>
+            <article>
+              We are thrilled to share that our community classroom in Lucknow’s
+              Indira Nagar slum has taken another big step forward. This week,
+              we introduced structured learning sessions with the help of three
+              volunteer teachers who are dedicating their time daily to teach
+              reading, writing, and basic arithmetic. Over 65 children attended
+              the sessions, many of them stepping into a classroom environment
+              for the very first time. Alongside lessons, we also distributed
+              school bags and notebooks so that every child could start fresh
+              with their own learning materials. Parents have begun attending
+              short orientation meetings, which is helping us build stronger
+              trust and continuity in the program. Our next focus will be to
+              introduce digital aids like a projector for interactive lessons,
+              ensuring children remain engaged and inspired to learn. Each
+              contribution from supporters like you is making this dream a
+              reality.
+            </article>
+          </section>
+        </section>
+        <section class="donation-details">
+          <button class="main-donation-btn">Contribute Now</button>
+          <div class="donation-ways">
+            <button class="payment-types">All Credits & Debits</button>
+            <button class="payment-types">Net Banking</button>
+            <button class="payment-types">Paytm & UPI</button>
+          </div>
+          <button class="forward-btn">Share The Word</button>
+          <div class="fundraiser-amount">
+            <span class="amount-collected">₹ 11,26,128</span>
+            <div class="total-amount">
+              raised of <b style="color: black">₹ 18,00,000 </b> goal
+            </div>
+          </div>
+          <div class="fund-bar">
+            <div class="fund-bar-fill"></div>
+          </div>
+          <div class="additional-info">
+            <div class="supporters">461 <span>Supporters</span></div>
+            <div class="time">13 <span>days left</span></div>
+          </div>
+          <section class="raiser-info">
+            <div class="campaigner person-detail">
+              <div class="raiser-logo person-logo">
+                <img
+                  src="/Frontend/assets/single-man-icon-people-icon-user-profile-symbol-person-symbol-businessman-stock-vector.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="raiser-detail person-data">
+                <span>Campaigner</span>
+                <p>
+                  <span class="person-name">Anjali Verma</span> <br />
+                  Volunteer Teacher & Community Organizer <br />
+                </p>
+              </div>
+              <button class="contact-btn">Contact</button>
+            </div>
+            <div class="beneficier person-detail">
+              <div class="beneficier-logo person-logo">
+                <img
+                  src="/Frontend/assets/single-man-icon-people-icon-user-profile-symbol-person-symbol-businessman-stock-vector.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="beneficier-detail person-data">
+                <span>Benefiting NGO</span>
+                <p>
+                  <span class="person-name">Bright Futures Foundation</span>
+                  <br />
+                  Non-Governmental Organization (NGO)
+                </p>
+              </div>
+              <button class="contact-btn">Contact</button>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer class="wave-footer">
+      <svg
+        class="footer-wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="#0A5251"
+          fill-opacity="1"
+          d="M0,96L48,122.7C96,149,192,203,288,197.3C384,192,480,128,576,122.7C672,117,768,171,864,197.3C960,224,1056,224,1152,202.7C1248,181,1344,139,1392,117.3L1440,96L1440,0L0,0Z"
+        ></path>
+      </svg>
+
+      <div class="footer-content">
+        <section class="footer-top-left">
+          <section class="top-left">
+            <div class="footer-img">
+              <img src="/Frontend/assets/logo-transparent-svg.svg" alt="" />
+            </div>
+          </section>
+          <section class="bottom-left">
+            <span>&copy; RiseFund.2025</span>
+            <span>All Rights Reserved</span>
+          </section>
+        </section>
+        <section class="footer-top-right">
+          <section class="top-right">
+            <div class="footer-items">
+              <h6>Donate</h6>
+              <div class="footer-links">
+                <ul>
+                  <li class="f-links"><a href="">Education</a></li>
+                  <li class="f-links"><a href="">Social</a></li>
+                </ul>
+                <ul>
+                  <li class="f-links"><a href="">Medicine</a></li>
+                  <li class="f-links"><a href="">Disaster</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-items">
+              <h6>Help</h6>
+              <div class="footer-links">
+                <ul>
+                  <li class="f-links"><a href="">FAQ</a></li>
+                  <li class="f-links"><a href="">Privacy Policy</a></li>
+                </ul>
+                <ul>
+                  <li class="f-links"><a href="">Accessibility</a></li>
+                  <li class="f-links"><a href="">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-items">
+              <h6>Company</h6>
+              <div class="footer-links">
+                <ul>
+                  <li class="f-links"><a href="">About Us</a></li>
+                  <li class="f-links"><a href="">Careers</a></li>
+                </ul>
+                <ul>
+                  <li class="f-links"><a href="">Services</a></li>
+                  <li class="f-links"><a href="">Pricing</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="bottom-right">
+            <button class="f-btns">
+              <i class="fa-brands fa-instagram"></i>Instagram
+            </button>
+            <button class="f-btns">
+              <i class="fa-brands fa-facebook"></i>Facebook
+            </button>
+            <button class="f-btns">
+              <i class="fa-brands fa-x-twitter"></i>Twitter
+            </button>
+            <button class="f-btns">
+              <i class="fa-brands fa-linkedin"></i>LinkedIn
+            </button>
+          </section>
+        </section>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const about = document.getElementById("about");
+    const update = document.getElementById("update");
+    const update_btn = document.getElementById('update-btn');
+    const about_btn = document.getElementById('about-btn');
+    window.onload = function () {
+      const section = localStorage.getItem("activeSection" || "about");
+      toggleSections(section);
+    };
+    function toggleSections(section) {
+      if (section == "about") {
+        update.style.display = "none";
+        about.style.display = "block";
+        about_btn.style.color = '#0A5251';
+        about_btn.style.fontWeight = 'bold';
+         update_btn.style.color = '#4d4d4d';
+        update_btn.style.fontWeight = '500';
+
+      } else if (section === "update") {
+        update.style.display = "block";
+        about.style.display = "none";
+        update_btn.style.color = '#0A5251';
+        update_btn.style.fontWeight = 'bold';
+        about_btn.style.color = '#4d4d4d';
+        about_btn.style.fontWeight = '500';
+      }
+      localStorage.setItem("activeSection", section);
+    }
+    const camp_image = document.querySelectorAll('.camp-images');
+    const main_image = document.getElementById('main-image');
+    camp_image.forEach((image)=>{
+      image.addEventListener("click",()=>{
+        const bg = image.src;
+        main_image.style.backgroundImage = `url('${bg}')`;
+        main_image.style.backgroundPosition = 'center';
+      });
+    })
+  </script>
+</html>

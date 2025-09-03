@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start a Fundraiser</title>
+    <link rel="stylesheet" href="/Frontend/css/header.css" />
+    <link rel="stylesheet" href="/Frontend/css/footer.css" />
+    <link rel="stylesheet" href="/Frontend/css/fundraiserform.css" />
+     <link
+      rel="shortcut icon"
+      href="/Frontend/assets/nature.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="/Frontend/js/header.js" defer></script>
+  </head>
+  <body>
+      <header>
+      <div class="web-logo">
+        <img src="/Frontend/assets/logo-transparent-svg.svg" alt="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li class="nav-link"><a href="/Frontend/index.html">Home</a></li>
+          <li class="nav-link">
+            <a href="/Frontend/components/donate.html">Donation</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/How_it_works.html">How it Works</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/About.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="login-btn">
+        <button
+          onclick="window.location.href='/Frontend/components/UserLogin.html'"
+        >
+          Log In
+        </button>
+        <button>Sign In</button>
+      </div>
+        <div class="login-small">
+          <button class="dropbtn" id="login-btn"><i class="fas fa-bars"></i></button>
+          <div class="dropdown-content" id="content">
+            <a href="#">Login</a>
+            <a href="#">Sign In</a>
+          </div>
+        </div>
+    </header>
+    <main>
+      <h1>Start Your Campaign</h1>
+      <section class="main-container">
+        <form action="/submit" method="post">
+          <section class="campaign-info">
+            <h3>Campaign Details</h3>
+            <label for="camp-title">Campaign Title:</label><br />
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Enter Campaign Title"
+              required
+            /><br />
+            <label for="category">Select Campaign Category:</label>
+            <select name="category" id="camp-category">
+              <option>Select Category</option>
+              <option value="Medical">Medical</option>
+              <option value="Education">Education</option>
+              <option value="Environment">Environment</option>
+              <option value="Technology">Technical</option>
+            </select>
+            <br />
+            <label for="description">Tell us about your campaign</label><br />
+            <textarea
+              name="camp-description"
+              id="camp-description"
+              placeholder="Enter the Details"
+              required
+            ></textarea>
+            <br />
+            <label for="goal_amount">What is your fundraising goal?</label>
+            <input type="number" id="camp-amount" required min="100000" /><br />
+            <label for="camp-duration">Camapign Start and End Dates</label
+            ><br />
+            <label for="start">Start Date:</label>
+            <input type="date" required />
+            <label for="end">End Date:</label>
+            <input type="date" required /> <br />
+            <label for="images">Upload Images or Videos</label>
+            <input type="file" id="camp-images" required /><br />
+          </section>
+          <section class="beneficiary-details">
+            <h3>Beneficiary Details</h3>
+            <label for="beneficiary-name">Beneficiary Name:</label>
+            <input
+              type="text"
+              name="ben-name"
+              id="ben-name"
+              placeholder="Enter Name"
+              required
+            /><br />
+            <label for="location">Where are the beneficiaries located?:</label>
+            <textarea
+              name="ben-location"
+              id="ben-location"
+              placeholder="Enter the Location"
+              required
+            ></textarea>
+            <label for="ben-description"
+              >Who are the beneficiaries, and why do they need help?</label
+            ><br />
+            <textarea
+              name="ben-description"
+              id="ben-description"
+              placeholder="Enter the Details"
+            ></textarea>
+            <br />
+            <label for="contact-info">Beneficiary Contact</label>
+            <input
+              type="tel"
+              id="ben-contact"
+              pattern="^\+?[0-9]{1,3}?[0-9]{10}$"
+              required
+            /><br />
+            <label for="bank-account">Bank Account Number:</label>
+            <input
+              type="text"
+              id="bank-account"
+              name="bank-account"
+              placeholder="Enter your bank account number"
+              required
+              pattern="^\d{9,18}$"
+              title="Bank account number should be between 9 to 18 digits."
+            />
+
+            <label for="bank-name">Bank Name:</label>
+            <input
+              type="text"
+              id="bank-name"
+              name="bank-name"
+              placeholder="Enter your bank name"
+              required
+              pattern="[A-Za-z\s]+"
+              title="Bank name should only contain letters and spaces."
+            />
+
+            <label for="ifsc-code">IFSC Code:</label>
+            <input
+              type="text"
+              id="ifsc-code"
+              name="ifsc-code"
+              placeholder="Enter IFSC code"
+              required
+              pattern="^[A-Za-z]{4}\d{7}$"
+              title="IFSC code should be 4 letters followed by 7 digits."
+            />
+
+            <label for="account-holder">Account Holder Name:</label>
+            <input
+              type="text"
+              id="account-holder"
+              name="account-holder"
+              placeholder="Enter account holder name"
+              required
+              pattern="[A-Za-z\s]+"
+              title="Account holder name should only contain letters and spaces."
+            />
+
+            <label for="account-type">Account Type:</label>
+            <select id="account-type" name="account-type" required>
+              <option value="">Select Account Type</option>
+              <option value="savings">Savings</option>
+              <option value="current">Current</option>
+            </select>
+            <br>
+            <label for="legal-documents"
+              >Upload Legal Documents (PDF, DOC, etc.):</label
+            >
+            <input
+              type="file"
+              id="legal-documents"
+              name="legal-documents"
+              accept=".pdf, .doc, .docx"
+              required
+            /><br />
+            <small>Accepted formats: PDF, DOC, DOCX. Max size: 5MB.</small>
+          </section>
+          <div class="form-btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+      <footer class="wave-footer">
+ <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+  <path fill="#0A5251" fill-opacity="1" 
+    d="M0,96L48,122.7C96,149,192,203,288,197.3C384,192,480,128,576,122.7C672,117,768,171,864,197.3C960,224,1056,224,1152,202.7C1248,181,1344,139,1392,117.3L1440,96L1440,0L0,0Z">
+  </path>
+</svg>
+
+
+
+
+
+
+  <div class="footer-content">
+      <section class="footer-top-left">
+      <section class="top-left">
+        <div class="footer-img">
+          <img src="/Frontend/assets/logo-transparent-svg.svg" alt="">
+        </div>
+      </section>
+      <section class="bottom-left">
+        <span>&copy; RiseFund.2025</span>
+        <span>All Rights Reserved</span>
+      </section>
+      </section>
+      <section class="footer-top-right">
+      <section class="top-right">
+        <div class="footer-items">
+          <h6>Donate</h6>
+          <div class="footer-links">
+            <ul>
+              <li class="f-links"><a href="">Education</a></li>
+              <li class="f-links"><a href="">Social</a></li>
+            </ul>
+            <ul>
+              <li class="f-links"><a href="">Medicine</a></li>
+              <li class="f-links"><a href="">Disaster</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-items">
+          <h6>Help</h6>
+          <div class="footer-links">
+            <ul>
+              <li class="f-links"><a href="">FAQ</a></li>
+              <li class="f-links"><a href="">Privacy Policy</a></li>
+            </ul>
+            <ul>
+              <li class="f-links"><a href="">Accessibility</a></li>
+              <li class="f-links"><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-items">
+          <h6>Company</h6>
+          <div class="footer-links">
+            <ul>
+              <li class="f-links"><a href="">About Us</a></li>
+              <li class="f-links"><a href="">Careers</a></li>
+            </ul>
+            <ul>
+              <li class="f-links"><a href="">Services</a></li>
+              <li class="f-links"><a href="">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+       <section class="bottom-right">
+        <button class="f-btns"><i class="fa-brands fa-instagram"></i>Instagram</button>
+        <button class="f-btns"><i class="fa-brands fa-facebook"></i>Facebook</button>
+        <button class="f-btns"><i class="fa-brands fa-x-twitter"></i>Twitter</button>
+        <button class="f-btns"><i class="fa-brands fa-linkedin"></i>LinkedIn</button>
+      </section>
+    </section>
+
+  </div>
+</footer>
+  </body>
+</html>

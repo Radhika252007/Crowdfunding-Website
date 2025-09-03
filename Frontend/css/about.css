@@ -1,0 +1,115 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    main {
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+.welcome {
+   background: radial-gradient(circle at bottom right, #f5efef, #bcbab8);
+  color: rgb(76, 73, 73);
+  padding: 60px 20px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+.welcome h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+.about-text h2{
+    text-align: center;
+    margin: 20px;
+}
+.about-text {
+  flex: 1;
+  margin-right: 15px;
+}
+.about-text p{
+    font-size: 20px;
+    text-align: justify;
+}
+.about-img {
+  flex: 1;
+}
+.about-img img {
+  width: 100%;
+  border-radius: 25px;
+}
+.values ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.values h2{
+    text-align: center;
+}
+.values ul li{
+    list-style: none;
+    margin: 20px;
+    border: 4px solid #bdddda;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.values ul li:hover{
+    transform: translateY(-5px);
+}
+.impact h2{
+    text-align: center;
+}
+.stories{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+.story{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba( 202, 235, 159,0.5)
+}
+
+.story h3{
+    margin-bottom: 15px;
+}
+.cta{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+.cta h2{
+    margin-bottom: 20px;
+}
+.cta a{
+    text-decoration: none;
+    color: #9b9898;
+    transition: all 0.3s ease-in;
+}
+.cta a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 750px) {
+    .stories{
+        flex-direction: column;
+    }
+    .values ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+}

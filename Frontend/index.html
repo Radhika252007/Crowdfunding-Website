@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RiseFund</title>
+    <link
+      rel="shortcut icon"
+      href="/Frontend/assets/nature.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="/Frontend/js/index.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Frontend/css/index.css" />
+    <link rel="stylesheet" href="/Frontend/css/header.css" />
+    <link rel="stylesheet" href="/Frontend/css/footer.css" />
+    <script src="/Frontend/js/header.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="web-logo">
+        <img src="/Frontend/assets/logo-transparent-svg.svg" alt="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li class="nav-link"><a href="/Frontend/index.html">Home</a></li>
+          <li class="nav-link">
+            <a href="/Frontend/components/donate.html">Donation</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/How_it_works.html">How it Works</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/About.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="login-btn">
+        <button
+          onclick="window.location.href='/Frontend/components/UserLogin.html'"
+        >
+          Log In
+        </button>
+        <button>Sign In</button>
+      </div>
+        <div class="login-small">
+          <button class="dropbtn" id="login-btn"><i class="fas fa-bars"></i></button>
+          <div class="dropdown-content" id="content">
+            <a href="#">Login</a>
+            <a href="#">Sign In</a>
+          </div>
+        </div>
+    </header>
+    <main>
+      <section class="index-img">
+        <div class="index-text">
+          <p>
+            Your Support Today Creates a Brighter Tomorrow for Someone in Need
+          </p>
+          <button
+            class="fund-btn"
+            onclick="window.location.href='FundraiserForm.html'"
+          >
+            Start Fundraising
+          </button>
+        </div>
+        <div class="index-images">
+          <img
+            src="/Frontend/assets/WhatsApp Image 2025-09-01 at 15.22.47_ae3c869a.jpg"
+            alt=""
+            id="img1"
+          />
+          <img
+            src="/Frontend/assets/premium_photo-1683140516842-74c378a43d76.avif"
+            alt=""
+            id="img2"
+          />
+          <img
+            src="/Frontend/assets/premium_photo-1683141240629-105bf30792e2.avif"
+            alt=""
+            id="img3"
+          />
+          <img
+            src="/Frontend/assets/photo-1584376003963-e1aa9a61c0ac.avif"
+            alt=""
+            id="img4"
+          />
+          <img
+            src="/Frontend/assets/photo-1599187469372-3f7b1becc340.avif"
+            alt=""
+            id="img5"
+          />
+        </div>
+      </section>
+      <section class="web-info">
+        <h1>Change starts with you.</h1>
+        <p>
+          Every great change begins with a single step. At RiseFund, we make it
+          possible for people like you to come together, support dreams, and
+          build a better tomorrow.
+        </p>
+      </section>
+      <section class="feature-cards">
+        <div class="features">
+          <div class="feature-logo"></div>
+          <div class="feature-des">
+            <h3>Boost Visiblity</h3>
+            <p>
+              Get your campaign featured on trending sections and reach
+              thousands of potential supporters quickly.
+            </p>
+          </div>
+        </div>
+        <div class="features">
+          <div class="feature-logo"></div>
+          <div class="feature-des">
+            <h3>Collaborative Support</h3>
+            <p>
+              Allow teams, friends, and organizations to contribute together,
+              building stronger community backing.
+            </p>
+          </div>
+        </div>
+        <div class="features">
+          <div class="feature-logo"></div>
+          <div class="feature-des">
+            <h3>Real-Time Progress</h3>
+            <p>
+              Track your donations live with progress bars and instant updates —
+              keep motivation high for supporters.
+            </p>
+          </div>
+        </div>
+        <div class="features">
+          <div class="feature-logo"></div>
+          <div class="feature-des">
+            <h3>Flexible Campaigns</h3>
+            <p>
+              Whether it’s a quick emergency fundraiser or a long-term cause,
+              set goals that fit your timeline and needs.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="web-info">
+        <h1>Urgent Fundraising!</h1>
+        <p>
+          In moments of emergency, even the smallest act of generosity becomes a
+          lifeline. Step in now and be the reason someone gets another chance at
+          tomorrow.
+        </p>
+      </section>
+      <section class="urgent-cards">
+        <div
+          class="urgent-funds"
+          onclick="window.location.href = 'Campaign_page.html'"
+        >
+          <img src="/Frontend/assets/images.jpeg" alt="" class="fund-img" />
+          <section class="fund-info">
+            <p class="fund-organizer">We Care</p>
+            <h4 class="fund-name">GreenFund: Sustain Earth Now</h4>
+            <div class="fund-bar">
+              <div class="fund-bar-fill"></div>
+            </div>
+            <div class="amount">
+              <span class="fund-money">$50.240.210</span>
+              <span class="fund-timeleft">7 days left</span>
+            </div>
+          </section>
+        </div>
+        <div
+          class="urgent-funds"
+          onclick="window.location.href = 'Campaign_page.html'"
+        >
+          <img src="/Frontend/assets/images (2).jpeg" alt="" class="fund-img" />
+          <section class="fund-info">
+            <p class="fund-organizer">We Care</p>
+            <h4 class="fund-name">GreenFund: Sustain Earth Now</h4>
+            <div class="fund-bar">
+              <div class="fund-bar-fill"></div>
+            </div>
+            <div class="amount">
+              <span class="fund-money">$50.240.210</span>
+              <span class="fund-timeleft">7 days left</span>
+            </div>
+          </section>
+        </div>
+        <div
+          class="urgent-funds"
+          onclick="window.location.href = 'Campaign_page.html'"
+          id="urgent-campaign"
+        >
+          <img src="/Frontend/assets/images (1).jpeg" alt="" class="fund-img" />
+          <section class="fund-info">
+            <p class="fund-organizer">We Care</p>
+            <h4 class="fund-name">GreenFund: Sustain Earth Now</h4>
+            <div class="fund-bar">
+              <div class="fund-bar-fill"></div>
+            </div>
+            <div class="amount">
+              <span class="fund-money">$50.240.210</span>
+              <span class="fund-timeleft">7 days left</span>
+            </div>
+          </section>
+        </div>
+        <div
+          class="urgent-funds"
+          onclick="window.location.href = 'Campaign_page.html'"
+        >
+          <img src="/Frontend/assets/images (4).png" alt="" class="fund-img" />
+          <section class="fund-info">
+            <p class="fund-organizer">We Care</p>
+            <h4 class="fund-name">GreenFund: Sustain Earth Now</h4>
+            <div class="fund-bar">
+              <div class="fund-bar-fill"></div>
+            </div>
+            <div class="amount">
+              <span class="fund-money">$50.240.210</span>
+              <span class="fund-timeleft">7 days left</span>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="join-fundraiser">
+        <div class="left-join">
+          <img src="/Frontend/assets/Help_image1.jpg" alt="" class="inner" />
+          <img src="/Frontend/assets/Help_image2.jpg" alt="" class="outer" />
+        </div>
+        <div class="join-text">
+          <p>Be The Part Of Fundraisers With Over</p>
+          <strong>217,678+</strong>
+          <p>People From Around The World</p>
+        </div>
+        <div class="right-join">
+          <img src="/Frontend/assets/Help_image3.jpg" alt="" class="inner" />
+          <img src="/Frontend/assets/Help_image4.jpg" alt="" class="outer" />
+        </div>
+        <button class="fund-btn">Join FundRaisers Now!</button>
+      </section>
+      <section class="faq-question">
+        <h1>Frequently Asked Questions.</h1>
+        <ul>
+          <li class="faqs">
+            How Can I Make Donation?
+            <div class="answer">
+              You can make a donation securely through our website’s donation
+              page.
+            </div>
+          </li>
+          <li class="faqs">
+            Is My Donation Tax-Deductible?
+            <div class="answer">
+              Yes, all donations are tax-deductible as permitted by law.
+            </div>
+          </li>
+          <li class="faqs">
+            Can I Donate In Honor Or Memory Of Someone?
+            <div class="answer">
+              Absolutely, you can dedicate your donation during checkout.
+            </div>
+          </li>
+          <li class="faqs">
+            How Will My Donations Be Used?
+            <div class="answer">
+              Your donations support our programs and help people in urgent
+              need.
+            </div>
+          </li>
+          <li class="faqs">
+            Can I Set Up A Recurring Donation?
+            <div class="answer">
+              Yes, you can choose to set up monthly recurring donations.
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="wave-footer">
+      <svg
+        class="footer-wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="#0A5251"
+          fill-opacity="1"
+          d="M0,96L48,122.7C96,149,192,203,288,197.3C384,192,480,128,576,122.7C672,117,768,171,864,197.3C960,224,1056,224,1152,202.7C1248,181,1344,139,1392,117.3L1440,96L1440,0L0,0Z"
+        ></path>
+      </svg>
+
+      <div class="footer-content">
+        <section class="footer-top-left">
+          <section class="top-left">
+            <div class="footer-img">
+              <img src="/Frontend/assets/logo-transparent-svg.svg" alt="" />
+            </div>
+          </section>
+          <section class="bottom-left">
+            <span>&copy; RiseFund.2025</span>
+            <span>All Rights Reserved</span>
+          </section>
+        </section>
+        <section class="footer-top-right">
+          <section class="top-right">
+            <div class="footer-items">
+              <h6>Donate</h6>
+              <div class="footer-links">
+                <ul>
+                  <li class="f-links"><a href="">Education</a></li>
+                  <li class="f-links"><a href="">Social</a></li>
+                </ul>
+                <ul>
+                  <li class="f-links"><a href="">Medicine</a></li>
+                  <li class="f-links"><a href="">Disaster</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-items">
+              <h6>Help</h6>
+              <div class="footer-links">
+                <ul>
+                  <li class="f-links"><a href="">FAQ</a></li>
+                  <li class="f-links"><a href="">Privacy Policy</a></li>
+                </ul>
+                <ul>
+                  <li class="f-links"><a href="">Accessibility</a></li>
+                  <li class="f-links"><a href="">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-items">
+              <h6>Company</h6>
+              <div class="footer-links">
+                <ul>
+                  <li class="f-links"><a href="">About Us</a></li>
+                  <li class="f-links"><a href="">Careers</a></li>
+                </ul>
+                <ul>
+                  <li class="f-links"><a href="">Services</a></li>
+                  <li class="f-links"><a href="">Pricing</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="bottom-right">
+            <button class="f-btns">
+              <i class="fa-brands fa-instagram"></i>Instagram
+            </button>
+            <button class="f-btns">
+              <i class="fa-brands fa-facebook"></i>Facebook
+            </button>
+            <button class="f-btns">
+              <i class="fa-brands fa-x-twitter"></i>Twitter
+            </button>
+            <button class="f-btns">
+              <i class="fa-brands fa-linkedin"></i>LinkedIn
+            </button>
+          </section>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

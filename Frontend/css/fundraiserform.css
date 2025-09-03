@@ -1,0 +1,93 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+h1{
+    margin: 30px;
+    color:#bdddda;
+}
+.main-container{
+    width: 60%;
+     box-shadow: 0 2px 6px rgba(34, 34, 34, 0.3);
+     border-radius: 20px;
+     margin-bottom: 150px;
+     background-color: rgb(243, 244, 245);
+
+}
+.campaign-info,.beneficiary-details{
+    padding: 30px;
+    border: 2px solid rgb(226, 224, 224);
+    background-color: white;
+    border-radius: 20px;
+    margin: 30px;
+}
+.campaign-info h3, .beneficiary-details h3{
+    font-size: 30px;
+    text-align: center;
+}
+input,textarea,select{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+option:hover{
+    background-color: lightgray;
+}
+input[type="text"],textarea{
+    width: 100%;
+}
+input[type="text"]{
+    height: 40px;
+}
+label{
+    font-weight: bold;
+}
+.form-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-btn button{
+    width: 50%;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #bdddda;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.form-btn button:hover{
+    background-color: #9bd0cb;
+}
+@media (max-width:900px) {
+    .main-container{
+        width: 100%;
+        background-color: white;
+        box-shadow: none;
+    }
+}
+@media (max-width:423px) {
+    h1,h3{
+        font-size: 6vw !important;
+    }
+    h3{
+        margin-bottom: 30px;
+    }
+}
