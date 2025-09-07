@@ -34,7 +34,7 @@
         <ul>
           <li class="nav-link"><a href="/Frontend/index.html">Home</a></li>
           <li class="nav-link">
-            <a href="/Frontend/components/donate.html">Donation</a>
+            <a href="/Frontend/components/donate.html">Browse Fundraiser</a>
           </li>
           <li class="nav-link">
             <a href="/Frontend/components/How_it_works.html">How it Works</a>
@@ -46,7 +46,7 @@
       </nav>
       <div class="login-btn">
         <button
-          onclick="window.location.href='/Frontend/components/UserLogin.html'"
+          onclick="window.location.href='/Frontend/components/Login-SignIn.html'"
         >
           Log In
         </button>
@@ -57,7 +57,22 @@
           <div class="dropdown-content" id="content">
             <a href="#">Login</a>
             <a href="#">Sign In</a>
+            <div class="nav-small">
+               <ul>
+          <li class="nav-link"><a href="/Frontend/index.html">Home</a></li>
+          <li class="nav-link">
+            <a href="/Frontend/components/donate.html">Browse Fundraiser</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/How_it_works.html">How it Works</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/About.html">About Us</a>
+          </li>
+        </ul>
+            </div>
           </div>
+        </div>
         </div>
     </header>
     <main>
@@ -68,7 +83,7 @@
           </p>
           <button
             class="fund-btn"
-            onclick="window.location.href='FundraiserForm.html'"
+            onclick="window.location.href='/Frontend/components/FundraiserForm.html'"
           >
             Start Fundraising
           </button>
@@ -160,76 +175,88 @@
         </p>
       </section>
       <section class="urgent-cards">
-        <div
-          class="urgent-funds"
-          onclick="window.location.href = 'Campaign_page.html'"
-        >
-          <img src="/Frontend/assets/images.jpeg" alt="" class="fund-img" />
-          <section class="fund-info">
-            <p class="fund-organizer">We Care</p>
-            <h4 class="fund-name">GreenFund: Sustain Earth Now</h4>
-            <div class="fund-bar">
-              <div class="fund-bar-fill"></div>
-            </div>
-            <div class="amount">
-              <span class="fund-money">$50.240.210</span>
-              <span class="fund-timeleft">7 days left</span>
-            </div>
-          </section>
-        </div>
-        <div
-          class="urgent-funds"
-          onclick="window.location.href = 'Campaign_page.html'"
-        >
-          <img src="/Frontend/assets/images (2).jpeg" alt="" class="fund-img" />
-          <section class="fund-info">
-            <p class="fund-organizer">We Care</p>
-            <h4 class="fund-name">GreenFund: Sustain Earth Now</h4>
-            <div class="fund-bar">
-              <div class="fund-bar-fill"></div>
-            </div>
-            <div class="amount">
-              <span class="fund-money">$50.240.210</span>
-              <span class="fund-timeleft">7 days left</span>
-            </div>
-          </section>
-        </div>
-        <div
-          class="urgent-funds"
-          onclick="window.location.href = 'Campaign_page.html'"
-          id="urgent-campaign"
-        >
-          <img src="/Frontend/assets/images (1).jpeg" alt="" class="fund-img" />
-          <section class="fund-info">
-            <p class="fund-organizer">We Care</p>
-            <h4 class="fund-name">GreenFund: Sustain Earth Now</h4>
-            <div class="fund-bar">
-              <div class="fund-bar-fill"></div>
-            </div>
-            <div class="amount">
-              <span class="fund-money">$50.240.210</span>
-              <span class="fund-timeleft">7 days left</span>
-            </div>
-          </section>
-        </div>
-        <div
-          class="urgent-funds"
-          onclick="window.location.href = 'Campaign_page.html'"
-        >
-          <img src="/Frontend/assets/images (4).png" alt="" class="fund-img" />
-          <section class="fund-info">
-            <p class="fund-organizer">We Care</p>
-            <h4 class="fund-name">GreenFund: Sustain Earth Now</h4>
-            <div class="fund-bar">
-              <div class="fund-bar-fill"></div>
-            </div>
-            <div class="amount">
-              <span class="fund-money">$50.240.210</span>
-              <span class="fund-timeleft">7 days left</span>
-            </div>
-          </section>
-        </div>
-      </section>
+  <div
+    class="urgent-funds"
+         onclick="window.location.href = '/Frontend/components/Campaign_page.html'"
+  >
+    <img src="/Frontend/assets/images.jpeg" alt="" class="fund-img" />
+    <section class="fund-info">
+       <div class="fund-text">
+      <p class="fund-organizer">Global Aid</p>
+      <h4 class="fund-name">Medical Support for Cancer Patients</h4>
+       </div>
+      <div class="fund-bar">
+        <div class="fund-bar-fill"></div>
+      </div>
+      <div class="amount">
+        <span class="fund-money">₹12,40,000</span>
+        <span class="fund-timeleft">10 days left</span>
+      </div>
+    </section>
+  </div>
+
+  <div
+    class="urgent-funds"
+        onclick="window.location.href = '/Frontend/components/Campaign_page.html'"
+  >
+    <img src="/Frontend/assets/images (2).jpeg" alt="" class="fund-img" />
+    <section class="fund-info">
+      <div class="fund-text">
+      <p class="fund-organizer">Hope Foundation</p>
+      <h4 class="fund-name">Food & Shelter for Homeless Families</h4>
+      </div>
+      <div class="fund-bar">
+        <div class="fund-bar-fill"></div>
+      </div>
+      <div class="amount">
+        <span class="fund-money">₹8,90,000</span>
+        <span class="fund-timeleft">18 days left</span>
+      </div>
+    </section>
+  </div>
+
+  <div
+    class="urgent-funds"
+         onclick="window.location.href = '/Frontend/components/Campaign_page.html'"
+    id="urgent-campaign"
+  >
+    <img src="/Frontend/assets/images (1).jpeg" alt="" class="fund-img" />
+    <section class="fund-info">
+       <div class="fund-text">
+      <p class="fund-organizer">We Care</p>
+      <h4 class="fund-name">Education for Underprivileged Kids</h4>
+       </div>
+      <div class="fund-bar">
+        <div class="fund-bar-fill"></div>
+      </div>
+      <div class="amount">
+        <span class="fund-money">₹15,20,000</span>
+        <span class="fund-timeleft">7 days left</span>
+      </div>
+    </section>
+  </div>
+
+  <div
+    class="urgent-funds"
+     onclick="window.location.href = '/Frontend/components/Campaign_page.html'"
+  >
+    <img src="/Frontend/assets/images (4).png" alt="" class="fund-img" />
+    <section class="fund-info">
+       <div class="fund-text">
+      <p class="fund-organizer">Green Planet</p>
+      <h4 class="fund-name">Plant 1 Million Trees Initiative</h4>
+       </div>
+      <div class="fund-bar">
+        <div class="fund-bar-fill"></div>
+      </div>
+      <div class="amount">
+        <span class="fund-money">₹5,40,000</span>
+        <span class="fund-timeleft">15 days left</span>
+      </div>
+    </section>
+  </div>
+</section>
+
       <section class="join-fundraiser">
         <div class="left-join">
           <img src="/Frontend/assets/Help_image1.jpg" alt="" class="inner" />

@@ -25,7 +25,7 @@
     <script src="/Frontend/js/header.js" defer></script>
   </head>
   <body>
-     <header>
+  <header>
       <div class="web-logo">
         <img src="/Frontend/assets/logo-transparent-svg.svg" alt="logo" />
       </div>
@@ -33,7 +33,7 @@
         <ul>
           <li class="nav-link"><a href="/Frontend/index.html">Home</a></li>
           <li class="nav-link">
-            <a href="/Frontend/components/donate.html">Donation</a>
+            <a href="/Frontend/components/donate.html">Browse Fundraiser</a>
           </li>
           <li class="nav-link">
             <a href="/Frontend/components/How_it_works.html">How it Works</a>
@@ -45,7 +45,7 @@
       </nav>
       <div class="login-btn">
         <button
-          onclick="window.location.href='/Frontend/components/UserLogin.html'"
+          onclick="window.location.href='/Frontend/components/Login-SignIn.html'"
         >
           Log In
         </button>
@@ -56,7 +56,22 @@
           <div class="dropdown-content" id="content">
             <a href="#">Login</a>
             <a href="#">Sign In</a>
+            <div class="nav-small">
+               <ul>
+          <li class="nav-link"><a href="/Frontend/index.html">Home</a></li>
+          <li class="nav-link">
+            <a href="/Frontend/components/donate.html">Browse Fundraiser</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/How_it_works.html">How it Works</a>
+          </li>
+          <li class="nav-link">
+            <a href="/Frontend/components/About.html">About Us</a>
+          </li>
+        </ul>
+            </div>
           </div>
+        </div>
         </div>
     </header>
     <main>
@@ -142,7 +157,7 @@
           Your support means the world. Help us grow more dreams by making a
           contribution today!
         </p>
-        <a href="donate.html" class="btn-donate">Donate Now</a>
+        <a href="/Frontend/components/donate.html">Donate Now</a>
       </section>
     </main>
 

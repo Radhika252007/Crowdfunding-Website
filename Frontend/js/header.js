@@ -8,3 +8,4 @@ window.addEventListener('click',(e)=>{
         content.style.display = 'none';
     }
 });
+
