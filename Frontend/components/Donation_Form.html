@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="shortcut icon" href="/Frontend/assets/nature.png" type="image/x-icon" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/Frontend/css/header.css">
+    <link rel="stylesheet" href="/Frontend/css/footer.css">
+    <script src="/Frontend/js/header.js" defer></script>
+    <link rel="stylesheet" href="/Frontend/css/donation_form.css">
+    <script src="/Frontend/js/donation_form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="web-logo">
+            <img src="/Frontend/assets/logo-transparent-svg.svg" alt="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-link"><a href="/Frontend/index.html">Home</a></li>
+                <li class="nav-link">
+                    <a href="/Frontend/components/donate.html">Browse Fundraiser</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/Frontend/components/How_it_works.html">How it Works</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/Frontend/components/About.html">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="login-btn">
+            <button onclick="window.location.href='/Frontend/components/Login-SignIn.html'">
+                Log In
+            </button>
+            <button>Sign In</button>
+        </div>
+        <div class="login-small">
+            <button class="dropbtn" id="login-btn"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-content" id="content">
+                <a href="#">Login</a>
+                <a href="#">Sign In</a>
+                <div class="nav-small">
+                    <ul>
+                        <li class="nav-link"><a href="/Frontend/index.html">Home</a></li>
+                        <li class="nav-link">
+                            <a href="/Frontend/components/donate.html">Browse Fundraiser</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/Frontend/components/How_it_works.html">How it Works</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/Frontend/components/About.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <h1>Make a Donation</h1>
+        <div class="form-container">
+    <form id="donationForm" novalidate>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required minlength="3" placeholder="Enter your full name">
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+      
+      <label for="phone">Phone (optional)</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your Phone Number">
+
+      <label for="amount">Donation Amount (₹)</label>
+      <input type="number" id="amount" name="amount" min="100" required placeholder="Donation Amount">
+      
+      <label for="recurring">Donation Type</label>
+      <select id="recurring" name="recurring" required>
+        <option value="">Select</option>
+        <option value="one-time">One-time</option>
+        <option value="monthly">Monthly</option>
+      </select>
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment" required>
+        <option value="">Select</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="upi">UPI</option>
+        <option value="netbanking">Net Banking</option>
+        <option value="wallet">Wallet</option>
+      </select>
+      
+      <div id="cardBox" class="payment-box">
+        <label for="cardNumber">Card Number *</label>
+        <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" placeholder="16-digit card number">
+        
+        <label for="expiry">Expiry Date *</label>
+        <input type="month" id="expiry" name="expiry">
+        
+        <label for="cvv">CVV *</label>
+        <input type="password" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="3-digit CVV">
+      </div>
+
+      <div id="upiBox" class="payment-box">
+        <label for="upiId">UPI ID *</label>
+        <input type="text" id="upiId" name="upiId" placeholder="example@upi">
+      </div>
+
+      <div id="netbankingBox" class="payment-box">
+        <label for="bank">Select Bank *</label>
+        <select id="bank" name="bank">
+          <option value="">-- Select Bank --</option>
+          <option value="sbi">SBI</option>
+          <option value="hdfc">HDFC</option>
+          <option value="icici">ICICI</option>
+          <option value="axis">Axis Bank</option>
+        </select>
+      </div>
+
+      <div id="walletBox" class="payment-box">
+        <label for="wallet">Select Wallet *</label>
+        <select id="wallet" name="wallet">
+          <option value="">-- Select Wallet --</option>
+          <option value="paytm">Paytm</option>
+          <option value="phonepe">PhonePe</option>
+          <option value="gpay">Google Pay</option>
+        </select>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="anonymous" name="anonymous">
+        <label for="anonymous">Make my donation anonymous</label>
+      </div>
+      
+      <div class="checkbox-group">
+        <input type="checkbox" id="updates" name="updates">
+        <label for="updates">Send me updates about this project</label>
+      </div>
+      
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms & Privacy Policy *</label>
+      </div>
+      <button class="donation-sub-btn">Submit</button>
+    </form>
+
+  </div>
+    </main>
+    <footer class="wave-footer">
+        <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#0A5251" fill-opacity="1"
+                d="M0,96L48,122.7C96,149,192,203,288,197.3C384,192,480,128,576,122.7C672,117,768,171,864,197.3C960,224,1056,224,1152,202.7C1248,181,1344,139,1392,117.3L1440,96L1440,0L0,0Z">
+            </path>
+        </svg>
+        <div class="footer-content">
+            <section class="footer-top-left">
+                <section class="top-left">
+                    <div class="footer-img">
+                        <img src="/Frontend/assets/logo-transparent-svg.svg" alt="">
+                    </div>
+                </section>
+                <section class="bottom-left">
+                    <span>&copy; RiseFund.2025</span>
+                    <span>All Rights Reserved</span>
+                </section>
+            </section>
+            <section class="footer-top-right">
+                <section class="top-right">
+                    <div class="footer-items">
+                        <h6>Donate</h6>
+                        <div class="footer-links">
+                            <ul>
+                                <li class="f-links"><a href="">Education</a></li>
+                                <li class="f-links"><a href="">Social</a></li>
+                            </ul>
+                            <ul>
+                                <li class="f-links"><a href="">Medicine</a></li>
+                                <li class="f-links"><a href="">Disaster</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-items">
+                        <h6>Help</h6>
+                        <div class="footer-links">
+                            <ul>
+                                <li class="f-links"><a href="">FAQ</a></li>
+                                <li class="f-links"><a href="">Privacy Policy</a></li>
+                            </ul>
+                            <ul>
+                                <li class="f-links"><a href="">Accessibility</a></li>
+                                <li class="f-links"><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-items">
+                        <h6>Company</h6>
+                        <div class="footer-links">
+                            <ul>
+                                <li class="f-links"><a href="">About Us</a></li>
+                                <li class="f-links"><a href="">Careers</a></li>
+                            </ul>
+                            <ul>
+                                <li class="f-links"><a href="">Services</a></li>
+                                <li class="f-links"><a href="">Pricing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="bottom-right">
+                    <button class="f-btns"><i class="fa-brands fa-instagram"></i>Instagram</button>
+                    <button class="f-btns"><i class="fa-brands fa-facebook"></i>Facebook</button>
+                    <button class="f-btns"><i class="fa-brands fa-x-twitter"></i>Twitter</button>
+                    <button class="f-btns"><i class="fa-brands fa-linkedin"></i>LinkedIn</button>
+                </section>
+            </section>
+
+        </div>
+    </footer>
+</body>
+
+</html>
