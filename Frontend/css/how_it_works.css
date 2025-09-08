@@ -236,7 +236,11 @@ transition: opacity 0.3s ease-in, transform 0.4s ease-in;
     font-weight: bold;
     color: #0A5251;
 }
-.cta button {
+.cta a {
+    /* display: inline-block; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     margin: 30px;
     width: 30%;
@@ -248,9 +252,10 @@ transition: opacity 0.3s ease-in, transform 0.4s ease-in;
     font-size: 18px;
      color: white;
      transition: all 0.3s ease-out;
+
 }
 
-.cta button:hover{
+.cta a:hover{
     background-color: white;
   border: 2px solid #c5e99d;
   color: #c5e99d;

@@ -1,8 +1,8 @@
       * {
           margin: 0;
           padding: 0;
-          font-family: "Poppins", sans-serif;
           box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
       }
 
       body {
@@ -24,10 +24,8 @@
           background-color: #105d59;
           display: flex;
           justify-content: space-between;
-          /* text left, images right */
           align-items: center;
           padding: 0 5%;
-          /* some breathing space */
       }
 
       .index-text {
@@ -102,6 +100,7 @@
       }
 
       .fund-btn {
+
           background-color: #c5e99f;
           height: 40px;
           border: none;
@@ -111,15 +110,17 @@
           cursor: pointer;
           color: #4d4d4d;
           transition: all 0.3s ease-in;
+          text-decoration: none;
       }
 
       .fund-btn:hover {
           background-color: #b2ee73;
       }
 
-      .index-text button {
+      .index-text a {
+            font-size: 20px;
           height: 60px;
-          border-radius: 20px;
+          border-radius: 10px;
           animation: animate 0.3s ease-in;
       }
 
@@ -247,7 +248,7 @@
           font-size: 3.5em;
       }
 
-      .join-fundraiser button {
+      .join-fundraiser a {
           position: absolute;
           bottom: 0;
       }
@@ -302,7 +303,7 @@
 
       .outer {
           opacity: 0;
-          transform: translateX(-100px);
+          transform: translateX(100px);
           transition: opacity 3.5s ease, transform 3.5s ease;
       }
 
